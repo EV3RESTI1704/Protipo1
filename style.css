@@ -1,0 +1,220 @@
+body {
+
+margin: 0;
+font-family: Arial;
+
+}
+
+.container {
+
+display: flex;
+height: 100vh;
+
+}
+
+/* Barra lateral */
+
+.barra {
+
+width: 60px;
+background: #2b2b2b;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+padding-top: 10px;
+
+}
+
+/* Ícones */
+
+.icone {
+
+color: white;
+font-size: 20px;
+
+margin: 15px 0;
+
+cursor: pointer;
+
+position: relative;
+
+}
+
+/* HOVER COM NOME */
+
+.icone::after {
+
+content: attr(data-nome);
+
+position: absolute;
+
+left: 40px;
+
+background: #000;
+color: white;
+
+padding: 5px 8px;
+
+border-radius: 5px;
+
+font-size: 12px;
+
+white-space: nowrap;
+
+opacity: 0;
+
+transition: 0.2s;
+
+}
+
+.icone:hover::after {
+
+opacity: 1;
+
+}
+
+/* Lista de salas */
+
+.salas {
+
+width: 180px;
+
+background: #f0f0f0;
+
+padding: 10px;
+
+}
+
+.salas ul {
+
+list-style: none;
+padding: 0;
+
+}
+
+.salas li {
+
+padding: 8px;
+
+cursor: pointer;
+
+border-radius: 6px;
+
+}
+
+.salas li:hover {
+
+background: #ddd;
+
+}
+
+/* Área principal */
+
+.principal {
+
+flex: 1;
+
+padding: 20px;
+
+overflow-y: auto;
+
+}
+
+/* Cards */
+
+.card {
+
+background: #f5f5f5;
+
+padding: 15px;
+
+margin-bottom: 10px;
+
+border-radius: 8px;
+
+}
+
+/* CHAT AI */
+
+.chat {
+
+display: flex;
+flex-direction: column;
+
+height: 80vh;
+
+}
+
+.chat-box {
+
+flex: 1;
+
+background: #f5f5f5;
+
+padding: 10px;
+
+overflow-y: auto;
+
+border-radius: 8px;
+
+margin-bottom: 10px;
+
+}
+
+.msg {
+
+background: white;
+
+padding: 8px;
+
+margin: 5px 0;
+
+border-radius: 6px;
+
+width: fit-content;
+
+}
+
+.msg.user {
+
+background: #d1e7ff;
+
+margin-left: auto;
+
+}
+
+.chat-input {
+
+display: flex;
+
+}
+
+.chat-input input {
+
+flex: 1;
+
+padding: 10px;
+
+border-radius: 6px 0 0 6px;
+
+border: 1px solid #ccc;
+
+}
+
+.chat-input button {
+
+padding: 10px;
+
+border: none;
+
+background: #2b2b2b;
+
+color: white;
+
+border-radius: 0 6px 6px 0;
+
+cursor: pointer;
+
+}
