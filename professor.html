@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Sistema do Professor</title>
+<link rel="stylesheet" href="professor.css">
+</head>
+<button onclick="sair()">Sair</button>
+<body>
+
+<div class="container">
+
+<!-- MENU LATERAL -->
+
+<div class="barra">
+
+<div class="icone" data-nome="Avisos" onclick="abrirAvisos()">📢</div>
+
+<div class="icone" data-nome="Atividades" onclick="abrirAtividades()">📝</div>
+
+<div class="icone" data-nome="Conteúdos" onclick="abrirConteudos()">📚</div>
+
+<div class="icone" data-nome="IA Auxiliar" onclick="abrirIA()">🤖</div>
+
+</div>
+
+
+<!-- ÁREA PRINCIPAL -->
+
+<div class="principal">
+
+<h2 id="titulo">Painel do Professor</h2>
+
+<div id="conteudo"></div>
+
+</div>
+
+</div>
+
+<script src="professor.js"></script>
+
+</body>
+
+</html>

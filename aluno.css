@@ -1,0 +1,99 @@
+body {
+margin: 0;
+font-family: Arial;
+}
+
+.container {
+display: flex;
+height: 100vh;
+}
+
+/* barra lateral */
+
+.barra {
+width: 60px;
+background: #2b2b2b;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10px;
+}
+
+.icone {
+color: white;
+margin: 15px 0;
+cursor: pointer;
+position: relative;
+}
+
+/* tooltip */
+
+.icone::after {
+content: attr(data-nome);
+position: absolute;
+left: 40px;
+background: black;
+color: white;
+padding: 4px 8px;
+font-size: 12px;
+border-radius: 5px;
+opacity: 0;
+}
+
+.icone:hover::after {
+opacity: 1;
+}
+
+/* conteúdo */
+
+.principal {
+flex: 1;
+padding: 20px;
+}
+
+/* cards */
+
+.card {
+background: #f5f5f5;
+padding: 15px;
+margin-bottom: 10px;
+border-radius: 8px;
+}
+
+/* calendário */
+
+.calendario {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+gap: 5px;
+}
+
+.dia {
+background: #eee;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+}
+
+/* chat */
+
+.chat-box {
+background: #f5f5f5;
+height: 300px;
+overflow-y: auto;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+.msg {
+background: white;
+padding: 8px;
+margin: 5px 0;
+border-radius: 6px;
+}
+
+.user {
+background: #d1e7ff;
+margin-left: auto;
+}

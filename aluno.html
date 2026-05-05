@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Sistema do Aluno</title>
+<link rel="stylesheet" href="aluno.css">
+</head>
+<button onclick="sair()">Sair</button>
+<body>
+
+<div class="container">
+
+<!-- BARRA LATERAL -->
+
+<div class="barra">
+
+<div class="icone" data-nome="Salas" onclick="abrirSalas()">📚</div>
+
+<div class="icone" data-nome="Avisos" onclick="abrirAvisos()">📢</div>
+
+<div class="icone" data-nome="Calendário" onclick="abrirCalendario()">📅</div>
+
+<div class="icone" data-nome="Chat AI" onclick="abrirChat()">🤖</div>
+
+</div>
+
+
+<!-- CONTEÚDO -->
+
+<div class="principal">
+
+<h2 id="titulo">Salas</h2>
+
+<div id="conteudo"></div>
+
+</div>
+
+</div>
+
+<script src="aluno.js"></script>
+
+</body>
+
+</html>

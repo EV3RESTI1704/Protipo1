@@ -1,109 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
 <meta charset="UTF-8">
 <title>Classconect</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
+<body class="inicio">
 
-<div class="container">
+<div class="container-inicio">
 
-<!-- Barra lateral -->
+<h1>📚 Classconect</h1>
+<p>Escolha seu perfil</p>
 
-<div class="barra">
+<div class="opcoes">
 
-<div class="icone" data-nome="Home">
-🏠
+<div class="card-opcao" onclick="entrar('aluno')">
+<h2>👨‍🎓</h2>
+<p>Aluno</p>
 </div>
 
-<div class="icone" data-nome="Salas">
-📚
-</div>
-
-<div class="icone" data-nome="Calendário">
-📅
-</div>
-
-<div class="icone" data-nome="Documentos">
-📄
-</div>
-
-<div
-class="icone"
-data-nome="Chat AI"
-onclick="abrirChatAI()"
->
-🤖
-</div>
-
-<div class="icone" data-nome="Configurações">
-⚙️
-</div>
-
-</div>
-
-
-<!-- Lista de salas -->
-
-<div class="salas">
-
-<h3>Salas</h3>
-
-<ul>
-
-<li onclick="mudarSala('Geral')">
-# Geral
-</li>
-
-<li onclick="mudarSala('Matemática')">
-# Matemática
-</li>
-
-<li onclick="mudarSala('Português')">
-# Português
-</li>
-
-</ul>
-
-</div>
-
-
-<!-- Área principal -->
-
-<div class="principal">
-
-<h2 id="titulo">
-Sala: Geral
-</h2>
-
-<div id="conteudoSala">
-
-<div class="card">
-
-<h3>📢 Avisos</h3>
-
-<p>
-Prova sexta-feira
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📝 Atividades</h3>
-
-<p>
-Lista disponível
-</p>
-
-</div>
-
+<div class="card-opcao" onclick="entrar('professor')">
+<h2>👩‍🏫</h2>
+<p>Professor</p>
 </div>
 
 </div>
@@ -111,7 +30,5 @@ Lista disponível
 </div>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
